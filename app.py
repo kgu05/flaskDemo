@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import requests
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -34,6 +35,7 @@ def plot():
 
       
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 
 
