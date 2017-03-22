@@ -1,4 +1,4 @@
-# Task of Day 1 for DI program: Clone the Flask Demo
+# Data Incubator: Milestone Project 
 
 # Flask on Heroku
 
